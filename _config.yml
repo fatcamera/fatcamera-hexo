@@ -3,8 +3,8 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Binbin Cao
-subtitle: love baobao
+title: 曹彬彬
+subtitle: 
 description:
 author: 曹彬彬
 language: zh-CN
@@ -40,7 +40,7 @@ future: true
 highlight:
   enable: true
   line_number: true
-  auto_detect: false
+  auto_detect: true
   tab_replace:
 
 # Category & Tag
@@ -65,24 +65,27 @@ pagination_dir: page
 ## Themes: https://hexo.io/themes/
 theme: maupassant
 
+## Feed
+feed:
+  type: rss2
+  path: rss2.xml
+  limit: 20
+
+## Sitemap
+sitemap:
+  path: sitemap.xml
+
+## Baidu Sitemap
+baidusitemap:
+  path: baidusitemap.xml
+
+## mathjax
+mathjax2: true
+
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy: 
   type: git
   repo: git@github.com-fatcamera:fatcamera/fatcamera.github.io.git
   branch: master
-
-# Feed
-feed:
-  type: rss2
-  path: rss2.xml
-  limit: 20
-
-# Sitemap
-sitemap:
-  path: sitemap.xml
-
-# Baidu Sitemap
-baidusitemap:
-  path: baidusitemap.xml
 
