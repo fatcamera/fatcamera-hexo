@@ -45,10 +45,22 @@ _斜体_
 ## 链接
 
 ```
-[曹彬彬](http://fatcamera.github.io/)
+[曹彬彬](http://fatcamera.github.io "曹彬彬")
+
+[曹彬彬][1]
+[1]: http://fatcamera.github.io "曹彬彬"
+
+[曹彬彬][]
+[曹彬彬]: http://fatcamera.github.io "曹彬彬"
 ```
 
-[曹彬彬](http://fatcamera.github.io/)
+[曹彬彬](http://fatcamera.github.io "曹彬彬")
+
+[曹彬彬][1]
+[1]: http://fatcamera.github.io "曹彬彬"
+
+[曹彬彬][]
+[曹彬彬]: http://fatcamera.github.io "曹彬彬"
 
 ## 列表
 
@@ -85,3 +97,11 @@ _斜体_
 | :---         |     :---:      |          ---: |
 | git status   | git status     | git status    |
 | git diff     | git diff       | git diff      |
+
+## 图像
+
+```
+![神经网络示意图](/content/images/2017/2/dnn_demo.png "神经网络")
+```
+
+![神经网络示意图](/content/images/2017/2/dnn_demo.png "神经网络")

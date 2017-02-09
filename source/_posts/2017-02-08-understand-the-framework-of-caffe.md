@@ -40,7 +40,7 @@ tags:
 
 ![Caffe代码架构图](/content/images/2017/2/caffe_src_framework.png)
 
-上图是Caffe的架构图，罗列了Caffe中主要的几个类和接口。对照Caffe的官方文档，把这个图理清楚，基本就可以掌握Caffe的实现原理了。
+上图是分析Caffe源码之后总结出的架构图，罗列了Caffe中主要的几个类和接口。对照Caffe的官方文档，把这个图理清楚，基本就可以掌握Caffe的实现原理了。
 
 Caffe中用Blob表示数据，类似于Numpy中的ndarry，可以理解为一个n维数组。深度学习计算过程中，数据、参数、残差等都用这个类型表示。data\_字段是数据，diff\_字段用来辅助存储残差，shape\_字段是数据的维度形状。Blob封装了CPU和GPU之间的数据同步问题，提供了cpu\_data/mutable\_cpu\_data这样的接口。通过调用这些接口，开发者可以不用关心计算过程中数据到底是存在CPU上还是GPU上，两个设备上的数据是否同步等问题。
 
