@@ -1,6 +1,7 @@
 ---
 title: 关于
 date: 2017-02-08 16:57:38
+layout: page
 hide_title: true
 comments: false
 ---
