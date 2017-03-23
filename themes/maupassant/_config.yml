@@ -1,4 +1,3 @@
-duoshuo: fatcameragithub ## Your duoshuo_shortname, e.g. username
 self_search: true ## Use a jQuery-based local search engine, true/false.
 google_analytics: ## Your Google Analytics tracking id, e.g. UA-42425684-2
 baidu_analytics: ## Your Baidu Analytics tracking id, e.g. 8006843039519956000

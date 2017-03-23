@@ -27,7 +27,6 @@ Default config:
 
 ```YAML
 fancybox: true ## If you want to use fancybox please set the value to true.
-duoshuo: ## Your duoshuo_shortname, e.g. username
 disqus: ## Your disqus_shortname, e.g. username
 google_search: true ## Use Google search, true/false.
 baidu_search: ## Use Baidu search, true/false.
@@ -89,7 +88,6 @@ css: css
 version: 0.0.0
 ```
 - fancybox - Enable [Fancybox](http://fancyapps.com/fancybox/)
-- duoshuo - [Duoshuo](http://duoshuo.com) shortname
 - disqus - [Disqus](https://disqus.com) shortname
 - google_search - Default search engine
 - baidu_search - Search engine for users in China
