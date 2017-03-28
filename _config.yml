@@ -12,7 +12,7 @@ timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://fatcamera.github.io
+url: http://fatcamera.duapp.com
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -44,9 +44,12 @@ highlight:
   tab_replace:
 
 # Category & Tag
-default_category: uncategorized
+default_category: 其它
 category_map:
+  其它: uncategorized
+  机器学习: machine_learning
 tag_map:
+  深度学习: deep_learning
 
 # Date / Time format
 ## Hexo uses Moment.js to parse and display date
@@ -86,6 +89,6 @@ mathjax2: true
 ## Docs: https://hexo.io/docs/deployment.html
 deploy: 
   type: git
-  repo: git@github.com-fatcamera:fatcamera/fatcamera.github.io.git
+  repo: https://fatcamera@git.duapp.com/appidarjhbl1sv7
   branch: master
 
