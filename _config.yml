@@ -12,7 +12,7 @@ timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://fatcamera.duapp.com
+url: http://www.binbincao.com
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -91,6 +91,6 @@ mathjax2: true
 ## Docs: https://hexo.io/docs/deployment.html
 deploy: 
   type: git
-  repo: https://fatcamera@git.duapp.com/appidarjhbl1sv7
+  repo: git@github.com-fatcamera:fatcamera/fatcamera.github.io.git
   branch: master
 

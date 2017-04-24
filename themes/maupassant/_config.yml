@@ -1,6 +1,6 @@
 self_search: true ## Use a jQuery-based local search engine, true/false.
-google_analytics: ## Your Google Analytics tracking id, e.g. UA-42425684-2
-baidu_analytics: ## Your Baidu Analytics tracking id, e.g. 8006843039519956000
+google_site_verification: Ph4uk9e5fGoV3rSFMpdNoNZJBSHxWsmVKl5ednytzrg
+baidu_site_verification: 8C4DGZbWaD
 show_category_count: false ## If you want to show the count of categories in the sidebar widget please set the value to true.
 busuanzi: false ## If you want to use Busuanzi page views please set the value to true.
 widgets_on_small_screens: false ## Set to true to enable widgets on small screens.
@@ -15,21 +15,17 @@ menu:
   - page: about
     directory: about/
     icon: fa-user
-  - page: rss
-    directory: rss2.xml
-    icon: fa-rss
 
 widgets: ## Six widgets in sidebar provided: search, category, tag, recent_posts, rencent_comments and links.
   - search
   - category
   - tag
   - recent_posts
-  - recent_comments
   - links
 
 links:
-  - title: site-name1
-    url: http://www.example1.com/
+  - title: BAOTING ART
+    url: http://www.baotingart.com/
 
 timeline:
   - num: 1
@@ -42,11 +38,11 @@ timeline:
     word: More
 
 comments:
-  gentie_key: 
+  gentie_key: b9fd8bda2b414523aa194e154da4b8ac
 
 # Static files
 js: js
 css: css
 
 # Theme version
-version: 0.0.1
+version: 0.0.2
