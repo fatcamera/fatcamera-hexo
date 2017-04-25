@@ -11,9 +11,9 @@ head
   meta(name='author', content=config.author)
   meta(name='keywords', content=config.keywords)
   if theme.google_site_verification
-      meta(name='google-site-verification', content=theme.google_site_verification)
+    meta(name='google-site-verification', content=theme.google_site_verification)
   if theme.baidu_site_verification
-      meta(name='baidu-site-verification', content=theme.baidu_site_verification)
+    meta(name='baidu-site-verification', content=theme.baidu_site_verification)
   block title
   link(rel='stylesheet', type='text/css', href='//cdn.bootcss.com/normalize/5.0.0/normalize.min.css')
   link(rel='stylesheet', type='text/css', href='//cdn.bootcss.com/pure/0.6.0/pure-min.css')
@@ -23,3 +23,10 @@ head
   script(type='text/javascript', src='//cdn.bootcss.com/jquery/3.1.1/jquery.min.js')
   if config.feed
     link(rel='alternate', type=feed_type, href=url_for(config.feed.path))
+  if theme.baidu_tongji
+    script.
+      var _hmt = _hmt || [];
+      (function() {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?#{theme.baidu_tongji}";
+        var s = document.getElementsByTagName("script")[0];

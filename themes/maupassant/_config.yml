@@ -1,6 +1,7 @@
 self_search: true ## Use a jQuery-based local search engine, true/false.
 google_site_verification: Ph4uk9e5fGoV3rSFMpdNoNZJBSHxWsmVKl5ednytzrg
 baidu_site_verification: 8C4DGZbWaD
+baidu_tongji: ## d603ef9eb2133726e8012c331f1b7683
 show_category_count: false ## If you want to show the count of categories in the sidebar widget please set the value to true.
 busuanzi: false ## If you want to use Busuanzi page views please set the value to true.
 widgets_on_small_screens: false ## Set to true to enable widgets on small screens.
