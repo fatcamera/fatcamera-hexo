@@ -15,6 +15,9 @@ block content
         a(href=url_for(post.path))
           +title(post)
       .post-meta= post.date.format(config.date_format)
+      if post.comments && theme.comments.gentie_key
+        a.cloud-tie-join-count(href=url_for(post.path) + '#cloud-tie-wrapper')
+          span.join-count(lang='join-count' data-url='#{config.url}#{url_for(post.path)}') 0
       if post.description
         .post-content
           != post.description
@@ -40,3 +43,10 @@ block content
         a(href=url_for(post.path))= __('Readmore')
 
   include _partial/paginator
+  if theme.comments.gentie_key
+    script.
+      var yunModuleEnv = true;
+    script(src='//img1.cache.netease.com/f2e/tie/yun/sdk/loader.js')
+    script.
+      var yunTieProductKey = '#{theme.comments.gentie_key}';
+      Tie.loader('aHR0cHM6Ly9hcGkuZ2VudGllLjE2My5jb20vZXh0ZW5kL2xpc3Rfam9pbl9zY3JpcHQuaHRtbA==', true);

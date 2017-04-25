@@ -4,10 +4,14 @@ date: 2017-02-08 10:02:20
 toc: true
 
 categories:
-- 其它
+  - 网络技术
 
 tags:
 ---
+
+本文摘录一些Markdown语法的示例。
+
+<!--more-->
 
 ## 标题
 

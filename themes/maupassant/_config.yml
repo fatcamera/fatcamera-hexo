@@ -40,6 +40,9 @@ timeline:
 comments:
   gentie_key: b9fd8bda2b414523aa194e154da4b8ac
 
+toc:
+    max_depth: 3
+    
 # Static files
 js: js
 css: css

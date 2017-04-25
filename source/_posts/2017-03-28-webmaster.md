@@ -10,12 +10,16 @@ tags:
   - 网站管理
 ---
 
-# DNS
+本文记录一些个人网站建设过程中的经验。
+
+<!--more-->
+
+## DNS
 使用[DNSPod](https://www.dnspod.cn)管理DNS。
 不要使用无www的CNAME解析，使用显性URL(301重定向)的方式解决无www访问。这可以避免[网易云跟帖](https://gentie.163.com/)的多域名聚合问题。
 
-# Github Pages
+## Github Pages
 
-## 自定义404页
+### 自定义404页
 在根目录下创建一个`404.html`即可。
 
