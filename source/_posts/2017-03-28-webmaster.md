@@ -20,6 +20,13 @@ tags:
 
 ## Github Pages
 
+### 自定义域名
+1. 在source目录下创建文件`CNAME`，文件内容为自定义的域名。
+1. 修改DNS，添加CNAME记录，指向username.github.io
+
 ### 自定义404页
-在根目录下创建一个`404.html`即可。
+在source目录下创建一个`404.md`即可。hexo会在根目录下生成一个`404.html`。
+
+参见：[Creating a custom 404 page for your GitHub Pages site](https://help.github.com/articles/creating-a-custom-404-page-for-your-github-pages-site/)
+
 
