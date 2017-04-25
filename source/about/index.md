@@ -6,8 +6,6 @@ hide_title: true
 comments: false
 ---
 
-Email: caobinbin <span class="fa fa-at"></span> live.com
-
 > Love is patient, love is kind.
 > It does not envy, it does not boast, it is not pround.
 > It does not dishonor others, it is not self-seeking,
