@@ -5,14 +5,6 @@ if page.title
 else
   - var current_title = config.title
 
-if config.feed
-  case config.feed.type
-    when 'rss2'
-      - var feed_type='application/rss+xml'
-    when 'atom'
-    default
-      - var feed_type='application/atom+xml'
-
 doctype html
 html(lang='#{config.language}')
   include _partial/head

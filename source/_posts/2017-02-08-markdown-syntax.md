@@ -108,4 +108,4 @@ _斜体_
 ![神经网络示意图](/content/images/2017/2/dnn_demo.png "神经网络")
 ```
 
-![神经网络示意图](/content/images/2017/2/dnn_demo.png "神经网络")
+![神经网络示意图](http://cdn.binbincao.com/images/2017/2/dnn_demo.png "神经网络")

@@ -32,13 +32,13 @@ tags:
 
 ## Caffe的设计思路
 
-![神经网络示意图](/content/images/2017/2/dnn_demo.png)
+![神经网络示意图](http://cdn.binbincao.com/images/2017/2/dnn_demo.png)
 
 上图是一个简单的神经网络示意图。神经网络由一层层的神经元节点组成。训练数据从输入层(input layer)节点输入，中间的隐层(hidden layer)节点做一些运算，输出层(output layer)连接标注，就可以通过梯度下降法迭代的更新网络权重，完成一次机器学习过程。在这个过程中，有几个要素，网络中的数据流，负责运算的节点算子，层次化的网络结构，以及最后的优化算法。Caffe把这4个部分进行抽象和封装，就形成了一套深度学习的计算框架。简单的说，Caffe = 数据流 + 节点算子 + 网络结构 + 优化算法。
 
 ## Caffe的实现架构和源码解析
 
-![Caffe代码架构图](/content/images/2017/2/caffe_src_framework.png)
+![Caffe代码架构图](http://cdn.binbincao.com/images/2017/2/caffe_src_framework.png)
 
 上图是分析Caffe源码之后总结出的架构图，罗列了Caffe中主要的几个类和接口。对照Caffe的官方文档，把这个图理清楚，基本就可以掌握Caffe的实现原理了。
 

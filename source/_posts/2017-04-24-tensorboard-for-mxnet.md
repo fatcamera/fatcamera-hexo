@@ -75,7 +75,7 @@ mx.viz.plot_network(mlp)
 ```
 网络结构如下图
 
-![mxnet-mlp](/content/images/2017/4/mxnet-mlp.png)
+![mxnet-mlp](http://cdn.binbincao.com/images/2017/4/mxnet-mlp.png)
 
 ### 创建模型
 这里使用MXNet的**Module**接口进行训练。Module接口提供了一些**回调函数**，通过在回调函数中加入监控代码，就可以在训练过程中将需要监控的内容存储下来。下面给出了几个常用监控场景的代码示例。
@@ -205,14 +205,14 @@ tensorboard --logdir=logs --port=8990
 
 SCALARS页面显示了我们监控的训练集误差和验证集误差。
 
-![mxnet-tensorboard-scalar](/content/images/2017/4/mxnet-tensorboard-scalar.png)
+![mxnet-tensorboard-scalar](http://cdn.binbincao.com/images/2017/4/mxnet-tensorboard-scalar.png)
 
 IMAGES页面使用灰度图的形式显示了我们监控的fc1层的权重矩阵。
 
-![mxnet-tensorboard-image](/content/images/2017/4/mxnet-tensorboard-image.png)
+![mxnet-tensorboard-image](http://cdn.binbincao.com/images/2017/4/mxnet-tensorboard-image.png)
 
 DISTRIBUTIONS和HISTOGRAMS页面显示了我们监控的fc1层的权重矩阵和残差，可以看到它们的分布随时间的变化。
 
-![mxnet-tensorboard-distribution](/content/images/2017/4/mxnet-tensorboard-distribution.png)
+![mxnet-tensorboard-distribution](http://cdn.binbincao.com/images/2017/4/mxnet-tensorboard-distribution.png)
 
-![mxnet-tensorboard-histogram](/content/images/2017/4/mxnet-tensorboard-histogram.png)
+![mxnet-tensorboard-histogram](http://cdn.binbincao.com/images/2017/4/mxnet-tensorboard-histogram.png)

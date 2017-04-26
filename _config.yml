@@ -90,7 +90,9 @@ mathjax2: true
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy: 
-  type: git
-  repo: git@github.com-fatcamera:fatcamera/fatcamera.github.io.git
+#- type: git
+#  repo: git@github.com-fatcamera:fatcamera/fatcamera.github.io.git
+#  branch: master
+- type: git
+  repo: https://fatcamera@git.duapp.com/appidarjhbl1sv7
   branch: master
-
