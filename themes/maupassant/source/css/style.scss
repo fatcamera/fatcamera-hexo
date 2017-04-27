@@ -1501,25 +1501,23 @@ em.search-keyword {
 
 /* business card */
 div.business-card {
-    width: 480px;
-    height: 270px;
-    margin: auto auto;
+    width: 320px;
+    height: 180px;
+    margin: auto;
     background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAHElEQVQYV2NkYGAwZmBgOMsABYwwBjYBsEoMFQBQhgIF9JIf4wAAAABJRU5ErkJggg==) repeat;
-    
     .business-card-info {
-        margin-left: 200px;
-        padding-top: 10px;
+        margin-left: 120px;
         .business-card-name {
-            font-size: 48px;
+            font-size: 36px;
         }
         .business-card-title {
-            font-size: 16px;
-            margin-bottom: 20px;
+            font-size: 12px;
+            margin-bottom: 10px;
         }
         .business-card-item {
-            font-size: 20px;
+            font-size: 15px;
             span {
-                padding-right: 10px;
+                padding-right: 5px;
             }
         }
     }
