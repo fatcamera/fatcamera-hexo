@@ -1,3 +1,4 @@
+// local search
 var searchFunc = function(path, search_id, content_id) {
     'use strict';
     $.ajax({
@@ -84,3 +85,91 @@ var searchFunc = function(path, search_id, content_id) {
         }
     });
 }
+searchFunc('/search.xml', 'local-search-input', 'local-search-result');
+
+// code block
++function($) {
+    'use strict';
+
+    // Resize code blocks to fit the screen width
+
+    var CodeBlockResizer = function(elem) {
+        this.$codeBlocks = $(elem);
+    };
+
+    CodeBlockResizer.prototype = {
+        /**
+         * Run main feature
+         */
+        run: function() {
+            var self = this;
+            // resize all codeblocks
+            self.resize();
+            // resize codeblocks when window is resized
+            $(window).smartresize(function() {
+                self.resize();
+            });
+        },
+
+        /**
+         * Resize codeblocks
+         */
+        resize: function() {
+            var self = this;
+            self.$codeBlocks.each(function() {
+                var $gutter = $(this).find('.gutter');
+                var $code = $(this).find('.code');
+                // get padding of code div
+                var codePaddings = $code.width() - $code.innerWidth();
+                // code block div width with padding - gutter div with padding + code div padding
+                var width = $(this).outerWidth() - $gutter.outerWidth() + codePaddings;
+                // apply new width
+                $code.css('width', width);
+                $code.children('pre').css('width', width);
+            });
+        }
+    };
+
+    $(document).ready(function() {
+        // register jQuery function to check if an element has an horizontal scroll bar
+        $.fn.hasHorizontalScrollBar = function() {
+            return this.get(0).scrollWidth > this.innerWidth();
+        };
+        var resizer = new CodeBlockResizer('figure.highlight');
+        resizer.run();
+    });
+}(jQuery);
+
+// smart resize
++(function($, sr) {
+    // debouncing function from John Hann
+    // http://unscriptable.com/index.php/2009/03/20/debouncing-javascript-methods/
+    var debounce = function(func, threshold, execAsap) {
+        var timeout;
+
+        return function debounced() {
+            var obj = this, args = arguments;
+
+            function delayed() {
+                if (!execAsap) {
+                    func.apply(obj, args);
+                }
+
+                timeout = null;
+            };
+
+            if (timeout) {
+                clearTimeout(timeout);
+            }
+            else if (execAsap) {
+                func.apply(obj, args);
+            }
+
+            timeout = setTimeout(delayed, threshold || 100);
+        };
+    };
+
+    jQuery.fn[sr] = function(fn) {
+        return fn ? this.bind('resize', debounce(fn)) : this.trigger(sr);
+    };
+})(jQuery, 'smartresize');
