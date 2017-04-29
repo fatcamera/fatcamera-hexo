@@ -1,5 +1,5 @@
-if page.comments && theme.comments.gentie_key
-  div(id='cloud-tie-wrapper' class='cloud-tie-wrapper')
+if theme.comments.gentie_key && page.comments
+  #cloud-tie-wrapper.cloud-tie-wrapper
   script.
     var cloudTieConfig = {
       url: document.location.href, 

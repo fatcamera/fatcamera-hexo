@@ -7,9 +7,10 @@ block title
      title= page.tag + ' | ' + config.title
   if page.archive
      title= __('archive') + ' | ' + config.title
+
 block content
   if page.category || page.tag
-      h1.label-title=  __('reading_label', page.category || page.tag)
+    h1.label-title=  __('reading_label', page.category || page.tag)
   .post
     .post-archive
         //Use lodash to classify posts. See https://lodash.com/docs#groupBy
@@ -18,7 +19,6 @@ block content
           ul.listing
             for post in posts
               li
-                span.date= post.date.format('YYYY/MM/DD')
-                a(href=url_for(post.path), title=post.title)
-                  +title(post)
+                span.date= post.date.format(config.date_format)
+                a(href=url_for(post.path), title=post.title)= post.title
   include _partial/paginator.jade

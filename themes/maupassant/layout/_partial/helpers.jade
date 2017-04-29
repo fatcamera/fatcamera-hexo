@@ -12,10 +12,3 @@ mixin a_with_current(href, content, id)
   else
     a(href=url)
       i(class='fa' + ' ' + id)= ' ' + content
-
-mixin title(page)
-  if page
-    if page.title
-      = page.title
-    else
-      = _p('no-title')

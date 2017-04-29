@@ -1,5 +1,5 @@
 ---
-title: 网站管理
+title: 网站开发与管理
 date: 2017-03-28 19:10:31
 toc: true
 
@@ -13,6 +13,12 @@ tags:
 本文记录一些个人网站建设过程中的经验。
 
 <!--more-->
+
+## PureCSS
+https://purecss.io
+
+## Jade/Pug
+https://pugjs.org
 
 ## DNS
 使用[DNSPod](https://www.dnspod.cn)管理DNS。

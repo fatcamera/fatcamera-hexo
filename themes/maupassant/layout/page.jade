@@ -1,12 +1,12 @@
 extends base
+
 block title
   title= page.title + ' | ' + config.title
+
 block content
   .post
     if !page.hide_title
       h1.post-title= page.title
     .post-content
       != page.content
-  if page.comments
-    include _partial/comments
-
+  include _partial/comments
