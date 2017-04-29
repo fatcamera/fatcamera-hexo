@@ -1,9 +1,9 @@
 ---
-title: 404
+title: 页面不存在
 layout: page
-hide_title: false
+hide_title: true
 comments: false
 date: 2017-03-28 16:05:02
 ---
 
-page not found.
+# 很抱歉，您要访问的页面不存在！
