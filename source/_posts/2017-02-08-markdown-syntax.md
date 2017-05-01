@@ -2,6 +2,7 @@
 title: Markdown语法
 date: 2017-02-08 10:02:20
 toc: true
+comments: false
 
 categories:
   - 网络技术
