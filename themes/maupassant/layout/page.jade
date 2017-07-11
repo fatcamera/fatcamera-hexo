@@ -7,6 +7,11 @@ block content
   .post
     if !page.hide_title
       h1.post-title= page.title
+    if page.toc
+      .clear
+        #toc.toc-article
+          .toc-title= __('contents')
+          != toc(page.content, theme.toc)
     .post-content
       != page.content
   include _partial/comments

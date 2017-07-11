@@ -13,6 +13,9 @@ menu:
   - page: archive
     directory: archives/
     icon: fa-archive
+  - page: papers
+    directory: papers/
+    icon: fa-graduation-cap
   - page: about
     directory: about/
     icon: fa-user
@@ -31,9 +34,6 @@ links:
 timeline:
   - num: 1
     word: 2014/06/12-Start
-
-comments:
-  gentie_key: b9fd8bda2b414523aa194e154da4b8ac
 
 toc:
     max_depth: 3
