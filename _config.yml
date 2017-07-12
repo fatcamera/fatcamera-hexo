@@ -53,6 +53,8 @@ category_map:
 tag_map:
   深度学习: deep_learning
   网站管理: webmaster
+  图像分割: semantic_segmentation
+  物体检测: object_detection
 
 # Date / Time format
 ## Hexo uses Moment.js to parse and display date
