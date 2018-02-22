@@ -110,6 +110,8 @@ Rethinking Atrous Convolution for Semantic Image Segmentation, [2017](https://ar
 ## U-Net
 U-Net Convolutional Networks for Biomedical Image Segmentation, [MICCAI 2015](https://arxiv.org/abs/1505.04597), [Caffe](https://lmb.informatik.uni-freiburg.de/people/ronneber/u-net/)
 
+![unet](/content/images/2017/7/unet.png)
+
 
 ## ParseNet
 ParseNet Looking Wider to See Better, [ICLR 2016](https://arxiv.org/abs/1506.04579)
@@ -122,7 +124,7 @@ Efficient Inference in Fully Connected CRFs with Gaussian Edge Potentials, [NIPS
 ## DPN
 Semantic Image Segmentation via Deep Parsing Network, [ICCV 2015](https://arxiv.org/abs/1509.02634)
 
-## wider deeper
+## ResNet38
 
 ## Adelaide
 High-performance Semantic Segmentation Using Very Deep Fully Convolutional Networks, [2016](https://arxiv.org/abs/1604.04339)
